@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analytics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://planonsoftware.com/upload_mm/4/7/1/4719_fullimage_20210309-image-dataanalytics-magnifieroverview-high-3000x1987.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333;
+            text-align: center;
+        }
+        h1 {
+            color: #0077b6;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            display: block;
+            text-decoration: none;
+            background-color: #0077b6;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #005074;
+        }
+        .dashboard-container {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Financial Analysis</h1>
+
+    <p>Click on the links below to view reports</p>
+
+    <ul>
+        <li>
+            <a href="#" id="october23-button">Static Pool Component</a>
+            <div class="dashboard-container" id="october23-dashboard" style="display: none;">
+                <iframe src="https://prod-apnortheast-a.online.tableau.com/t/scpl1/views/Staticpoolcomponentsep23/Dashboard1?:origin=card_share_link&:embed=true" width="1000" height="900"></iframe>
+            </div>
+        </li>
+        <li>
+            <a href="#" id="november23-button">MIS</a>
+            <div class="dashboard-container" id="november23-dashboard" style="display: none;">
+                <iframe src="https://prod-apnortheast-a.online.tableau.com/t/scpl1/views/Book2/Dashboard1?:origin=card_share_link&:embed=true" width="1366" height="768"></iframe>
+            </div>
+        </li>
+        <li>
+            <a href="#" id="december23-button">Recievables</a>
+            <div class="dashboard-container" id="december23-dashboard" style="display: none;">
+                <iframe src="https://prod-apnortheast-a.online.tableau.com/t/scpl1/views/RecievablesNew12/Dashboard1?:origin=card_share_link&:embed=true" width="100%" height="1000"></iframe>
+            </div>
+        </li>
+        <li>
+     	    <a href="#" id="par-button">Portfolio At Risk Report</a>
+            <div class="dashboard-container" id="par-dashboard" style="display: none;">
+                <iframe src="https://prod-apnortheast-a.online.tableau.com/t/scpl1/views/PARNEW1/Dashboard1?:origin=card_share_link&:embed=true" width="1366" height="768"></iframe>
+            </div>
+        </li>
+	<li>
+     	    <a href="#" id="Collection">Collection Efficiency and Current Demands</a>
+            <div class="dashboard-container" id="Collection Dashboard" style="display: none;">
+                <iframe src="https://prod-apnortheast-a.online.tableau.com/t/scpl1/views/CollectionVsDemandNEW1/Dashboard1?:origin=card_share_link&:embed=true" width="1000" height="800"></iframe>
+            </div>
+        </li>
+	<li>
+     	    <a href="#" id="Asset-Allocation">Asset Allocation</a>
+            <div class="dashboard-container" id="Asset-Allocation" style="display: none;">
+                <iframe src="https://prod-apnortheast-a.online.tableau.com/t/scpl1/views/Allocationassets1/Dashboard1?:origin=card_share_link&:embed=true" width="1000" height="800"></iframe>
+            </div>
+        </li>
+
+     </ul>
+
+    <script>
+    function toggleDashboardVisibility(buttonId, dashboardId) {
+        var dashboard = document.getElementById(dashboardId);
+        var isHidden = dashboard.style.display === 'none';
+
+        if (isHidden) {
+            dashboard.style.display = 'block';
+        } else {
+            dashboard.style.display = 'none';
+        }
+    }
+
+    document.getElementById("october23-button").addEventListener("click", function () {
+        toggleDashboardVisibility("october23-button", "october23-dashboard");
+    });
+    document.getElementById("november23-button").addEventListener("click", function () {
+        toggleDashboardVisibility("november23-button", "november23-dashboard");
+    });
+    document.getElementById("december23-button").addEventListener("click", function () {
+        toggleDashboardVisibility("december23-button", "december23-dashboard");
+    });
+    document.getElementById("par-button").addEventListener("click", function () {
+        toggleDashboardVisibility("par-button", "par-dashboard");
+    });
+    document.getElementById("Collection").addEventListener("click", function () {
+        toggleDashboardVisibility("Collection", "Collection Dashboard");
+    });
+    document.getElementById("Asset-Allocation").addEventListener("click", function () {
+        toggleDashboardVisibility("Asset-Allocation", "Asset-Allocation");
+    });
+    </script>
+
+</body>
+</html>
+
