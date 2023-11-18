@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>CIBIL REQUEST</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <style media="screen">
+        *,
+        *:before,
+        *:after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #080710;
+            height: 100%;
+        }
+
+        .background {
+            width: 100%; /* Cover the entire width */
+            height: 100%; /* Cover the entire height */
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .background .shape {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .shape:first-child {
+            background: linear-gradient(
+                #1845ad,
+                #23a2f6
+            );
+            left: -80px;
+            top: -80px;
+        }
+
+        .shape:last-child {
+            background: linear-gradient(
+                to right,
+                #ff512f,
+                #f09819
+            );
+            right: -30px;
+            bottom: -80px;
+        }
+
+        .header-box {
+            background-color: rgba(255, 255, 255, 0.13);
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 10%;
+            left: 50%;
+            width: 400px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+            padding: 20px 35px;
+            padding-bottom: 50px;
+        }
+
+        form {
+            padding-top: 50px;
+            width: 40%;
+            background-color: rgba(255, 255, 255, 0.13);
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 112%; /* Adjusted the top position */
+            left: 50%;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+            padding: 50px 35px;
+            margin: 0;
+            overflow-y: auto;
+        }
+
+        form * {
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+            outline: none;
+            border: none;
+        }
+
+        .header {
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            font-size: 32px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        form h3 {
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 42px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 30px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        input {
+            display: block;
+            height: 50px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.07);
+            border-radius: 3px;
+            padding: 0 10px;
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        ::placeholder {
+            color: #e5e5e5;
+        }
+
+        button {
+            margin-top: 50px;
+            width: 50%;
+            background-color: #ffffff;
+            color: #080710;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .social {
+            margin-top: 30px;
+            display: flex;
+        }
+
+        .social div {
+            background: red;
+            width: 150px;
+            border-radius: 3px;
+            padding: 5px 10px 10px 5px;
+            background-color: rgba(255, 255, 255, 0.27);
+            color: #eaf0fb;
+            text-align: center;
+        }
+
+        .social div:hover {
+            background-color: rgba(255, 255, 255, 0.47);
+        }
+
+        .social .fb {
+            margin-left: 25px;
+        }
+
+        .social i {
+            margin-right: 4px;
+        }
+
+        .company-logo {
+            text-align: center;
+        }
+
+        .company-logo img {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <div class="header-box">
+        <div class="company-logo">
+            <img src="srcapital.png" alt="Company Logo">
+        </div>
+        <div class="header">CIBIL REQUEST</div>
+    </div>
+    <form>
+        <h3>Request CIBIL Report</h3>
+
+        <label for="loan-type">Loan Type</label>
+        <input type="text" placeholder="Loan Type" id="loan-type">
+
+        <label for="name">Name</label>
+        <input type="text" placeholder="Name" id="name">
+	
+        <label for="s/o">S/O</label>
+        <input type="text" placeholder="S/O" id="so">
+
+        <label for="mob-no">MOB NO</label>
+        <input type="text" placeholder="MOB NO" id="mob-no">
+
+        <label for="dob">D. O. B</label>
+        <input type="text" placeholder="D. O. B" id="dob">
+
+        <label for="aadhar">AADHAR</label>
+        <input type="text" placeholder="AADHAR" id="aadhar">
+
+        <label for="pan">PAN</label>
+        <input type="text" placeholder="PAN" id="pan">
+
+        <label for="address">ADDRESS</label>
+        <input type="text" placeholder="ADDRESS" id="address">
+
+        <label for="make-model">MAKE&MODEL</label>
+        <input type="text" placeholder="MAKE&MODEL" id="make-model">
+
+        <label for="seg-tw">SEG:TW</label>
+        <input type="text" placeholder="SEG:TW" id="seg-tw">
+
+        <label for="loan-amount">LOAN AMOUNT</label>
+        <input type="text" placeholder="LOAN AMOUNT" id="loan-amount">
+
+        <label for="veh-no">VEH.NO</label>
+        <input type="text" placeholder="VEH.NO" id="veh-no">
+
+        <label for="re-name">RE NAME</label>
+        <input type="text" placeholder="RE NAME" id="re-name">
+
+        <label for="branch">BRANCH</label>
+        <input type="text" placeholder="BRANCH" id="branch">
+        <!-- Add more input fields for other CIBIL request details here -->
+        <button type="button" onclick="submitCIBILRequest()">Submit Request</button>
+    </form>
+
+    <!-- Include the SheetJS library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+
+
+    <script>
+        function submitCIBILRequest() {
+            var loanType = document.getElementById("loan-type").value;
+            var name = document.getElementById("name").value;
+            var so = document.getElementById("so").value;
+            var mobNo = document.getElementById("mob-no").value;
+            var dob = document.getElementById("dob").value;
+            var aadhar = document.getElementById("aadhar").value;
+            var pan = document.getElementById("pan").value;
+            var address = document.getElementById("address").value;
+            var makeModel = document.getElementById("make-model").value;
+            var segTw = document.getElementById("seg-tw").value;
+            var loanAmount = document.getElementById("loan-amount").value;
+            var vehNo = document.getElementById("veh-no").value;
+            var reName = document.getElementById("re-name").value;
+            var branch = document.getElementById("branch").value;
+
+            // Create an object to hold the captured data
+            var cibilRequestData = {
+                "Loan Type": loanType,
+                "Name": name,
+                "S/O": so,
+                "MOB NO": mobNo,
+                "D. O. B": dob,
+                "AADHAR": aadhar,
+                "PAN": pan,
+                "ADDRESS": address,
+                "MAKE&MODEL": makeModel,
+                "SEG:TW": segTw,
+                "LOAN AMOUNT": loanAmount,
+                "VEH.NO": vehNo,
+                "RE NAME": reName,
+                "BRANCH": branch
+            };
+
+	    var timestamp = new Date().toISOString();
+
+            // Add the timestamp to the data
+            cibilRequestData["Timestamp"] = timestamp;
+
+            // Convert the data to an array for Excel export
+            var dataArray = Object.keys(cibilRequestData).map(function (key) {
+                return [key, cibilRequestData[key]];
+            });
+
+            // Create a new workbook and add the data to a worksheet
+            var wb = XLSX.utils.book_new();
+            var ws = XLSX.utils.aoa_to_sheet([["Field", "Value"]].concat(dataArray));
+            XLSX.utils.book_append_sheet(wb, ws, "CIBIL_Request");
+	    
+
+            // Save the workbook as an Excel file
+            var today = new Date();
+            var dateStr = today.toISOString().slice(0, 10); // Format the date
+	    var filename= "CIBIL_Request_" + dateStr + ".xlsx";
+            XLSX.writeFile(wb, filename);
+	    var blob = XLSX.write(wb, { bookType: 'xlsx', type: 'blob' });
+
+var blob = XLSX.write(wb, { bookType: 'xlsx', type: 'blob' });
+
+// Check if the browser is Internet Explorer
+if (window.navigator && window.navigator.msSaveBlob) {
+    // For Internet Explorer, use msSaveBlob method
+    window.navigator.msSaveBlob(blob, filename);
+} else {
+    // For other browsers, create an anchor tag and trigger a click
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = filename;
+
+    // Append the anchor element to the document
+    document.body.appendChild(a);
+
+    // Trigger a click on the anchor element to prompt the user to save the file
+    a.click();
+
+    // Remove the anchor element from the document
+    document.body.removeChild(a);
+}
+
+
+            // Provide feedback to the user (you can customize this part)
+            console.log("CIBIL Request Data: ", cibilRequestData);
+            alert("CIBIL Request submitted successfully!");
+
+            // You can further process or store the data as needed
+        }
+    </script>
+</body>
+</html>
